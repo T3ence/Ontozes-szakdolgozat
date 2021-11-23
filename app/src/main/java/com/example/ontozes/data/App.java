@@ -43,19 +43,7 @@ public class App extends Application {
 
     public static ApplicationSettings settings;
 
-    public App() {
-
-        /*
-        parameterek = new Parameterek();
-        dob = new Dob();
-        vezerles = new Vezerles();
-        linear = new Linear();
-        */
-        /*
-        settings = new ApplicationSettings();
-        loadSettings();
-        */
-    }
+    public App() {}
 
     public boolean Theme(){
         boolean b = false;
@@ -75,27 +63,6 @@ public class App extends Application {
         editor.putBoolean(THEME_STATUS_SP, status);
     }
 
-    /*
-    public void loadSettings(){
-        System.out.println(">------------------------Loading Settings--------------------------<");
-        try{
-            settings.setActualTheme( loadTheme() );
-        }catch (Exception e){
-            settings.setActualTheme( false );
-        }
-    }
-
-    public boolean loadTheme(){
-        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
-        return sharedPreferences.getBoolean(THEME_STATUS_SP,false);
-    }
-
-    public void saveTheme(){
-        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putBoolean(THEME_STATUS_SP,false);
-    }
-*/
     public void changeDomain(){
         if( ACTUAL_DOMAIN.equals(PIKSZO_DOMAIN) ){
             ACTUAL_DOMAIN = THINKBOX_DOMAIN;
