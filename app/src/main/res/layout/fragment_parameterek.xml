@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_type1"
+    tools:context=".Parameterek">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:alpha="0.9"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="35dp">
+
+                <!--
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/cardBackground"
+                android:alpha="0.9"
+                android:layout_marginBottom="25dp"
+
+
+                app:cardCornerRadius="35dp">
+                -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+
+                        >
+
+
+                        <Space
+                            android:id="@+id/just_a_spacing"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+
+                            app:layout_constraintTop_toBottomOf="@+id/futasidok_card" />
+
+
+                        <com.github.anastr.speedviewlib.SpeedView
+                            android:id="@+id/vizHo"
+                            android:layout_width="335dp"
+                            android:layout_height="340dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.496"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+
+                            app:layout_constraintTop_toBottomOf="@+id/just_a_spacing"
+                            app:sv_centerCircleColor="@color/transparent"
+                            app:sv_endDegree="340"
+                            app:sv_indicator="QuarterLineIndicator"
+                            app:sv_indicatorColor="@color/colorAccent"
+                            app:sv_indicatorLightColor="?attr/fontColor_Strong"
+                            app:sv_indicatorWidth="10dp"
+                            app:sv_markColor="@android:color/white"
+
+                            app:sv_maxSpeed="100"
+                            app:sv_minSpeed="0"
+                            app:sv_sectionStyle="SQUARE"
+                            app:sv_speedTextColor="?attr/fontColor_Strong"
+                            app:sv_speedTextPadding="35dp"
+
+                            app:sv_speedTextSize="35sp"
+
+                            app:sv_speedometerMode="TOP"
+                            app:sv_speedometerWidth="40dp"
+
+                            app:sv_startDegree="200"
+                            app:sv_textColor="?attr/fontColor_Strong"
+
+                            app:sv_textSize="16dp"
+                            app:sv_trembleDegree="0.5"
+
+                            app:sv_unit=" °C"
+                            app:sv_unitTextColor="@color/colorAccent"
+                            app:sv_unitTextSize="15dp"
+                            app:sv_withIndicatorLight="true"
+                            app:sv_withTremble="false" />
+
+
+                        <TextView
+                            android:id="@+id/vizHo_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Víz hőmérséklet"
+                            android:textColor="?attr/fontColor_Strong"
+                            android:textSize="23sp"
+                            android:visibility="visible"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.502"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/just_a_spacing" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:src="?attr/csepel_ic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/just_a_spacing" />
+
+
+                        <LinearLayout
+                            android:id="@+id/futasidok_tab"
+                            android:layout_width="330dp"
+                            android:layout_height="210dp"
+                            android:background="@drawable/hidden_tab"
+                            android:foregroundGravity="center"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+
+
+                            android:visibility="invisible"
+
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+
+                            app:layout_constraintTop_toTopOf="@+id/futasidok_card">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp">
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="7dp"
+                                    android:text="1."
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="19sp"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <ImageView
+                                    android:id="@+id/futasido_1_img"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="?attr/timer_alap_icon"
+                                    android:visibility="visible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/textView"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/futasido_1_leallitas_img"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="?attr/timer_leallitas_icon"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/textView"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <TextView
+                                    android:id="@+id/futasidok_datum_elso"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="09/20 12:53"
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="23sp"
+
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/futasidok_ido_elso"
+                                    app:layout_constraintStart_toEndOf="@+id/futasido_1_img"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <TextView
+                                    android:id="@+id/futasidok_ido_elso"
+
+                                    android:layout_width="80dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="00:00"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/fontColor_Dark_card"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp">
+
+                                <TextView
+                                    android:id="@+id/textViewmasodik"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="7dp"
+                                    android:text="2."
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="19sp"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <ImageView
+                                    android:id="@+id/futasido_2_img"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="?attr/timer_alap_icon"
+                                    android:visibility="visible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/textViewmasodik"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/futasido_2_leallitas_img"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="?attr/timer_leallitas_icon"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/textViewmasodik"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <TextView
+                                    android:id="@+id/futasidok_datum_masodik"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="09/20 12:53"
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="23sp"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/futasidok_ido_masodik"
+                                    app:layout_constraintStart_toEndOf="@+id/futasido_2_img"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <TextView
+                                    android:id="@+id/futasidok_ido_masodik"
+
+                                    android:layout_width="80dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="00:00"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/fontColor_Dark_card"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp">
+
+                                <TextView
+                                    android:id="@+id/textViewharmadik"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="7dp"
+                                    android:text="3."
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="19sp"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <ImageView
+                                    android:id="@+id/futasido_3_img"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="?attr/timer_alap_icon"
+                                    android:visibility="visible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/textViewharmadik"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/futasido_3_leallitas_img"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="?attr/timer_leallitas_icon"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/textViewharmadik"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <TextView
+                                    android:id="@+id/futasidok_datum_harmadik"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="09/20 12:53"
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="23sp"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/futasidok_ido_harmadik"
+                                    app:layout_constraintStart_toEndOf="@+id/futasido_3_img"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <TextView
+                                    android:id="@+id/futasidok_ido_harmadik"
+
+                                    android:layout_width="80dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="00:00"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/fontColor_Dark_card"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="?attr/cardBackground"
+
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/futasidok_card"
+                            android:layout_width="330dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:onClick="futasidok"
+                            app:cardBackgroundColor="?attr/colorAccentTransparentLight"
+                            app:cardCornerRadius="35dp"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="OnClick">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="80dp"
+                                    android:layout_height="50dp"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_margin="5dp"
+                                        android:src="?attr/clock_icon" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/inditastol_elteltido_const"
+                                    android:layout_width="145dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Futásidő"
+                                    android:textAlignment="center"
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/inditastol_elteltido"
+                                    android:layout_width="80dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="00:00"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/fontColor_Dark_card"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.github.anastr.speedviewlib.SpeedView
+                            android:id="@+id/olajHo"
+                            android:layout_width="335dp"
+                            android:layout_height="340dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.496"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            app:sv_centerCircleColor="@color/transparent"
+                            app:sv_endDegree="340"
+                            app:sv_indicator="QuarterLineIndicator"
+                            app:sv_indicatorColor="@color/colorAccent"
+                            app:sv_indicatorLightColor="?attr/fontColor_Strong"
+                            app:sv_indicatorWidth="10dp"
+                            app:sv_markColor="@android:color/white"
+                            app:sv_maxSpeed="100"
+
+                            app:sv_minSpeed="0"
+                            app:sv_sectionStyle="SQUARE"
+                            app:sv_speedTextColor="?attr/fontColor_Strong"
+                            app:sv_speedTextPadding="35dp"
+                            app:sv_speedTextSize="35sp"
+
+                            app:sv_speedometerMode="TOP"
+
+                            app:sv_speedometerWidth="40dp"
+                            app:sv_startDegree="200"
+
+
+                            app:sv_textColor="?attr/fontColor_Strong"
+                            app:sv_textSize="16dp"
+
+                            app:sv_trembleDegree="0.5"
+                            app:sv_unit=" °C"
+
+                            app:sv_unitTextColor="@color/colorAccent"
+                            app:sv_unitTextSize="15dp"
+                            app:sv_withIndicatorLight="true"
+                            app:sv_withTremble="false" />
+
+                        <TextView
+                            android:id="@+id/olajHo_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Olaj hőmérséklet"
+                            android:textColor="?attr/fontColor_Strong"
+                            android:textSize="23sp"
+                            android:visibility="visible"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="240dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <!--
+                            app:above_wave_color="#cc00ff"
+                            app:blow_wave_color="#C300FF6C"
+                        -->
+
+                        <com.john.waveview.WaveView
+                            android:id="@+id/gazolajszint_gauge"
+                            android:layout_width="240dp"
+                            android:layout_height="240dp"
+                            android:background="?attr/cardBackground"
+                            android:gravity="center"
+
+                            app:above_wave_color="@color/androidAccent"
+                            app:blow_wave_color="@color/colorAccent"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0"
+                            app:progress="45"
+                            app:wave_height="little"
+                            app:wave_hz="normal"
+                            app:wave_length="middle">
+
+
+                        </com.john.waveview.WaveView>
+
+                        <ImageView
+                            android:id="@+id/waveGauge_frame"
+                            android:layout_width="240dp"
+                            android:layout_height="240dp"
+                            android:layout_gravity="center"
+                            android:background="?attr/waveGauge_frame"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!--
+                                                <LinearLayout
+                                                    android:id="@+id/linearLayout"
+                                                    android:layout_width="240dp"
+                                                    android:layout_height="240dp"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="horizontal"
+
+                                                    android:background="@drawable/olaj"
+                                                    app:layout_constraintBottom_toBottomOf="parent"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintLeft_toLeftOf="parent"
+                                                    app:layout_constraintRight_toRightOf="parent"
+                                                    app:layout_constraintStart_toStartOf="parent"
+
+                                                    app:layout_constraintTop_toTopOf="parent">
+
+
+                                                </LinearLayout>
+                        -->
+
+                        <TextView
+                            android:id="@+id/gazolajszint_text"
+                            android:layout_width="198dp"
+                            android:layout_height="105dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto_thin"
+                            android:gravity="center"
+                            android:text="100%"
+                            android:textColor="?attr/fontColor_Strong"
+                            android:textSize="80sp"
+                            android:visibility="visible"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="36dp"
+                            android:background="?attr/gaspump_ic"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25dp"
+                        android:alpha="1"
+                        app:cardBackgroundColor="?attr/colorAccentLight"
+                        app:cardCornerRadius="35dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                app:cardBackgroundColor="?attr/colorAccentTransparentLight"
+                                app:cardCornerRadius="35dp">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="25dp"
+                                    android:paddingRight="30dp">
+
+
+                                    <ImageView
+                                        android:id="@+id/imageView9"
+                                        android:layout_width="40dp"
+                                        android:layout_height="37dp"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight=".10"
+
+                                        android:src="?attr/battery_icon"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="8dp"
+                                        android:text="Feszültség"
+                                        android:textAlignment="center"
+                                        android:textColor="?attr/fontColor_Light_card"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"
+
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toStartOf="@+id/parameterek_feszultseg_text"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView9"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                    <TextView
+                                        android:id="@+id/parameterek_feszultseg_text"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight=".35"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:text="0.0 V"
+                                        android:textAlignment="center"
+                                        android:textAllCaps="false"
+                                        android:textColor="?attr/fontColor_Dark_card"
+                                        android:textSize="23sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="13dp"
+                                    android:paddingRight="13dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView3"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:background="?attr/oil_pressure"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/parameterek_olajnyomas_const"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="8dp"
+                                        android:text="Olajnyomás"
+                                        android:textAlignment="center"
+                                        android:textColor="?attr/fontColor_Light_card"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"
+
+                                        app:layout_constraintBottom_toBottomOf="parent"
+
+                                        app:layout_constraintEnd_toStartOf="@+id/parameterek_olajnyomas"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/parameterek_olajnyomas"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:text="0.0 Bar"
+                                        android:textAlignment="center"
+                                        android:textAllCaps="false"
+                                        android:textColor="?attr/fontColor_Dark_card"
+                                        android:textSize="23sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="13dp"
+                                    android:paddingRight="13dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView4"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:background="?attr/water_pressure"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/parameterek_visznyomas_const"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="8dp"
+                                        android:text="Víznyomás"
+                                        android:textAlignment="center"
+                                        android:textColor="?attr/fontColor_Light_card"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"
+
+                                        app:layout_constraintBottom_toBottomOf="parent"
+
+                                        app:layout_constraintEnd_toStartOf="@+id/parameterek_visznyomas"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView4"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/parameterek_visznyomas"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:text="0.0 Bar"
+                                        android:textAlignment="center"
+                                        android:textAllCaps="false"
+                                        android:textColor="?attr/fontColor_Dark_card"
+                                        android:textSize="23sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp" />
+
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="13dp"
+                                    android:paddingRight="13dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView5"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:background="?attr/water_flow"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/parameterek_aramlas_const"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="8dp"
+                                        android:text="Áramlás"
+                                        android:textAlignment="center"
+                                        android:textColor="?attr/fontColor_Light_card"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"
+
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toStartOf="@+id/parameterek_aramlas"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView5"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/parameterek_aramlas"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:text="Nincs"
+                                        android:textAlignment="center"
+                                        android:textAllCaps="false"
+                                        android:textColor="?attr/fontColor_Dark_card"
+                                        android:textSize="23sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp" />
+
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="15dp"
+                                    android:paddingLeft="13dp"
+                                    android:paddingRight="13dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView6"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:background="?attr/test_tube"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/parameterek_vegyszer_const"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="8dp"
+                                        android:text="Vegyszeradagolás"
+                                        android:textAlignment="center"
+                                        android:textColor="?attr/fontColor_Light_card"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"
+
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toStartOf="@+id/parameterek_vagyszer"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView6"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/parameterek_vagyszer"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:text="Nincs"
+                                        android:textAlignment="center"
+                                        android:textAllCaps="false"
+                                        android:textColor="?attr/fontColor_Dark_card"
+                                        android:textSize="23sp"
+                                        android:textStyle="bold"
+
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--
+            <Space
+                android:layout_width="400dp"
+                android:layout_height="30dp" />
+
+
+-->
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

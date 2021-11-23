@@ -1,0 +1,160 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorAccentTransparentLight">@color/colorAccentTransparentLight</item>
+
+        <item name="cardBackground">@color/cardBackground</item>
+        <item name="cardBackground_highlight">@color/colorAccentLight</item>
+
+
+        <item name="colorAccentStrong">@color/colorAccentStrong</item>
+        <item name="colorAccentLight">@color/colorAccentLight</item>
+
+        <item name="background_type1">@drawable/back2</item>
+        <item name="background_type2">@drawable/back2_flip</item>
+
+
+        <item name="fontColor_Strong">@color/fontColor_Strong</item>
+
+        <item name="fontColor_Dark_card">@color/fontColor_Dark_card</item>
+        <item name="fontColor_Light_card">@color/fontColor_Light_card</item>
+
+        <item name="android:navigationBarColor">#000000</item>
+
+
+        <item name="fab_cardBackground">@color/fab_cardBackground</item>
+
+        <item name="click_indicator">@color/colorAccentStrong</item>
+
+        <!-- Progress BAR -->
+
+        <!-- Öntözés -->
+        <item name="BarProgressStartColor_ontozes">@color/androidChreme</item>
+        <item name="BarProgressEndColor_ontozes">@color/colorAccentTransparentLight</item>
+
+        <!-- Telepítés -->
+        <item name="BarBackgroundStartColor_telepites">@color/colorAccentTransparentLight</item>
+        <item name="BarBackgroundEndColor_telepites">@color/androidChreme</item>
+        <item name="BarProgressStartColor_telepites">@color/androidChreme</item>
+        <item name="BarProgressEndColor_telepites">@color/colorAccentTransparentLight</item>
+
+        <!-- Drawables -->
+        <item name="gaspump_ic">@drawable/ic_gas_pump</item>
+        <item name="theme_ic">@drawable/ic_settings_white</item>
+        <item name="waveGauge_frame">@drawable/olaj</item>
+        <item name="csepel_ic">@drawable/ic_csepel</item>
+        <item name="bauerat">@drawable/bauerat</item>item>
+        <item name="backArrow">@drawable/ic_left_arrow_white</item>item>
+
+        <item name="oil_pressure">@drawable/ic_oil_pressure</item>item>
+        <item name="water_pressure">@drawable/ic_water_pressure</item>item>
+        <item name="water_flow">@drawable/ic_water_flow</item>item>
+        <item name="test_tube">@drawable/ic_test_tube</item>item>
+
+        <item name="telepites_logo">@drawable/ic_no_water_black</item>item>
+        <item name="ontozes_logo">@drawable/ic_water_drop_black</item>item>
+        <item name="location">@drawable/ic_location</item>item>
+        <item name="speed_gauge">@drawable/ic_speed_gauge_black</item>item>
+
+        <item name="clutch">@drawable/ic_clutch_black</item>item>
+        <item name="clock_icon">@drawable/ic_clock_black</item>item>
+        <item name="timer_alap_icon">@drawable/ic_timer_black</item>item>
+        <item name="timer_leallitas_icon">@drawable/ic_timer_orange</item>item>
+
+        <item name="battery_icon">@drawable/ic_car_battery_black</item>item>
+        <item name="camera_icon">@drawable/ic_security_camera_black</item>item>
+
+    </style>
+
+    <style name="Semmi" parent="AppTheme">
+    </style>
+
+    <style name="App_Theme_Dark" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary_Night</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Night</item>
+        <item name="colorAccent">@color/colorAccentTransparentLight_Night</item>
+
+        <item name="cardBackground">@color/cardBackground_Dark</item>
+        <item name="colorAccentTransparentLight">@color/colorAccentTransparentLight_Night</item>
+
+        <item name="background_type1">@drawable/back_night_flip</item>
+        <item name="background_type2">@drawable/back_night</item>
+
+        <item name="colorAccentStrong">@color/colorAccentStrong_Night</item>
+        <item name="colorAccentLight">@color/colorAccentLight_Night</item>
+
+        <item name="fontColor_Strong">@color/fontColor_Strong_Night</item>
+
+        <item name="fontColor_Dark_card">@color/fontColor_Dark_card_Night</item>
+        <item name="fontColor_Light_card">@color/fontColor_Light_card_Night</item>
+
+        <item name="click_indicator">@color/colorAccentLight_Night</item>
+
+        <item name="fab_cardBackground">@color/colorPrimary_Night</item>
+
+        <!-- Progress BAR -->
+
+        <!-- Öntözés -->
+        <item name="BarProgressStartColor_ontozes">@color/colorPrimary_Night</item>
+        <item name="BarProgressEndColor_ontozes">@color/colorAccentStrong_Night</item>
+
+        <!-- Telepítés -->
+        <item name="BarBackgroundStartColor_telepites">@color/colorAccentStrong_Night</item>
+        <item name="BarBackgroundEndColor_telepites">@color/colorPrimary_Night</item>
+        <item name="BarProgressStartColor_telepites">@color/colorPrimary_Night</item>
+        <item name="BarProgressEndColor_telepites">@color/colorAccentStrong_Night</item>
+
+        <!-- Drawables -->
+        <item name="gaspump_ic">@drawable/ic_gas_pump_white</item>
+        <item name="theme_ic">@drawable/ic_settings_white</item>
+        <item name="waveGauge_frame">@drawable/olaj_night</item>
+        <item name="csepel_ic">@drawable/ic_csepel_white</item>
+        <item name="bauerat">@drawable/bauerat_night</item>
+
+        <item name="oil_pressure">@drawable/ic_olaj_white</item>item>
+        <item name="water_pressure">@drawable/ic_water_pressure_white</item>item>
+        <item name="water_flow">@drawable/ic_water_flow_white</item>item>
+        <item name="test_tube">@drawable/ic_test_tube_white</item>item>
+
+        <item name="telepites_logo">@drawable/ic_no_water_white</item>item>
+        <item name="ontozes_logo">@drawable/ic_water_drop_white</item>item>
+        <item name="location">@drawable/ic_location_white</item>item>
+        <item name="speed_gauge">@drawable/ic_speed_gauge_white</item>item>
+
+        <item name="clutch">@drawable/ic_clutch_white</item>item>
+        <item name="clock_icon">@drawable/ic_clock_white</item>item>
+        <item name="timer_alap_icon">@drawable/ic_timer_white</item>item>
+        <item name="timer_leallitas_icon">@drawable/ic_timer_orange</item>item>
+
+        <item name="battery_icon">@drawable/ic_car_battery_white</item>item>
+        <item name="camera_icon">@drawable/ic_security_camera_white</item>item>
+
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

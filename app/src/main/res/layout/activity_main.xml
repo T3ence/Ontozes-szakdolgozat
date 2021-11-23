@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:minHeight="?actionBarSize"
+
+                    android:text="@string/app_name"
+                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:textSize="23sp"
+
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title">
+
+
+                    <ImageView
+                        android:id="@+id/server_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+
+                        android:layout_marginLeft="25dp"
+
+                        app:srcCompat="@drawable/ic_server" />
+
+                    <TextView
+                        android:id="@+id/server_name"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="5dp"
+
+                        android:text="Szerver" />
+
+                    <TextView
+                        android:id="@+id/connection_circle"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/connected"
+                        android:fontFamily="@font/roboto_thin"
+                        android:gravity="center"
+                        android:onClick="connection_circle_pressed" />
+
+
+                </LinearLayout>
+
+<!--
+                <ImageView
+                    android:id="@+id/server_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="25dp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title"
+                    app:srcCompat="@drawable/ic_server"
+                    />
+
+                <TextView
+                    android:id="@+id/server_name"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:paddingLeft="5dp"
+
+                    android:text="Szerver"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/server_img" />
+                -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+                        android:id="@+id/compass"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        app:srcCompat="@drawable/ic_eszak" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/wind_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:srcCompat="@drawable/ic_wind" />
+
+                        <TextView
+                            android:id="@+id/windSpeed"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="0 km/h"
+                            android:textSize="17sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/temp_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/ic_temp" />
+
+                        <TextView
+                            android:id="@+id/temp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="14 oC"
+                            android:textSize="17sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/temp_img"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <Button
+                        android:id="@+id/settings_bt"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="12dp"
+                        android:onClick="settings_bt_pressed"
+
+                        android:background="?attr/theme_ic" />
+<!--
+                    <TextView
+                        android:id="@+id/connection_circle_2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/connected"
+                        android:fontFamily="@font/roboto_thin"
+                        android:gravity="center"
+                        android:onClick="connection_circle_pressed" />
+-->
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="?attr/colorPrimaryDark"
+            app:tabTextAppearance="@style/MineCustomTabText"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/androidPrimary"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/flaoting_action_menu"
+        android:layout_width="100dp"
+        android:layout_height="320dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="5dp"
+        android:visibility="visible"
+
+
+        app:fab_addButtonSize="normal"
+        app:fab_addButtonColorNormal="@color/colorAccent"
+        app:fab_addButtonColorPressed="?attr/click_indicator">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/fab_back"
+            android:gravity="center"
+            android:foregroundGravity="center">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_ontozes"
+                android:layout_width="50dp"
+                android:layout_height="89dp"
+                android:layout_marginVertical="0dp"
+                android:src="@drawable/water_drops_ontozes"
+                app:fab_colorNormal="@color/colorAccent"
+                android:onClick="ontozes"
+
+                app:fab_colorPressed="?attr/click_indicator"
+                app:fab_size="normal"
+                app:fab_title="Öntözés" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Öntözés"
+                android:textColor="@color/androidWhite" />
+
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_alapjarat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_hold_alapjarat"
+                app:fab_title="Alapjárat"
+                android:onClick="alapjarat"
+
+                app:fab_size="normal"
+                app:fab_colorNormal="@color/colorAccent"
+                app:fab_colorPressed="?attr/click_indicator"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Alapjárat"
+                android:textColor="@color/androidWhite" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_leallitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_shutdown_leallitas"
+                app:fab_title="Leállítás"
+                android:onClick="leallitas"
+
+
+                app:fabCustomSize="60dp"
+                app:fab_size="normal"
+                app:fab_colorNormal="@color/colorAccent"
+                app:fab_colorPressed="?attr/click_indicator"
+                tools:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Leállítás"
+                android:textColor="@color/androidWhite" />
+
+        </LinearLayout>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

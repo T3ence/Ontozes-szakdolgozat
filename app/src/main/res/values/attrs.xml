@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Other values-->
+    <attr name="colorAccentStrong" format="reference" />
+    <attr name="colorAccentLight" format="reference" />
+    <attr name="cardBackground" format="reference" />
+    <attr name="cardBackground_highlight" format="reference" />
+    <attr name="fab_cardBackground" format="reference" />
+
+
+    <attr name="colorAccentTransparentLight" format="reference" />
+
+    <attr name="background_type1" format="reference" />
+    <attr name="background_type2" format="reference" />
+
+    <attr name="fontColor_Strong" format="reference" />
+
+    <attr name="fontColor_Dark_card" format="reference" />
+    <attr name="fontColor_Light_card" format="reference" />
+
+    <attr name="click_indicator" format="reference" />
+
+    <!-- Progress BAR -->
+    <!-- Öntözés -->
+    <attr name="BarProgressStartColor_ontozes" format="reference" />
+    <attr name="BarProgressEndColor_ontozes" format="reference" />
+
+    <!-- Telepítés -->
+    <attr name="BarBackgroundStartColor_telepites" format="reference" />
+    <attr name="BarBackgroundEndColor_telepites" format="reference" />
+    <attr name="BarProgressStartColor_telepites" format="reference" />
+    <attr name="BarProgressEndColor_telepites" format="reference" />
+
+
+    <attr name="csepel_ic" format="reference" />
+    <attr name="theme_ic" format="reference" />
+    <attr name="gaspump_ic" format="reference" />
+    <attr name="waveGauge_frame" format="reference" />
+    <attr name="bauerat" format="reference" />
+    <attr name="backArrow" format="reference" />
+
+    <attr name="oil_pressure" format="reference" />
+    <attr name="water_pressure" format="reference" />
+    <attr name="water_flow" format="reference" />
+    <attr name="test_tube" format="reference" />
+
+    <attr name="telepites_logo" format="reference" />
+    <attr name="ontozes_logo" format="reference" />
+    <attr name="location" format="reference" />
+    <attr name="speed_gauge" format="reference" />
+
+    <attr name="clutch" format="reference" />
+    <attr name="clock_icon" format="reference" />
+    <attr name="timer_alap_icon" format="reference" />
+    <attr name="timer_leallitas_icon" format="reference" />
+
+    <attr name="battery_icon" format="reference" />
+    <attr name="camera_icon" format="reference" />
+
+
+</resources>

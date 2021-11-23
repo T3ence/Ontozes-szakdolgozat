@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nappali színek -->
+    <color name="colorPrimary">#083042</color>
+    <color name="colorPrimaryDark">#083042</color>
+    <color name="colorAccent">#f86734</color>
+    <color name="colorAccentTransparent">#B6F86734</color>
+    <color name="colorAccentTransparentLight">#FC936E</color>
+
+    <color name="colorAccent2">#3ddb85</color>
+    <color name="colorAccentStrong_old">#39E487</color>
+    <color name="colorAccentStrong">#ACECC9</color>
+
+
+    <color name="colorAccent3">#8A3DDB85</color>
+    <color name="colorAccentLight">#ACECC9</color>
+
+    <color name="waterBlue">#4EB4FF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="cardBackground">#FFFFFF</color>
+
+    <color name="fontColor_Strong">#000000</color>
+
+    <color name="fontColor_Dark_card">#000000</color>
+    <color name="fontColor_Light_card">#88000000</color>
+
+    <color name="fab_cardBackground">#DE083042</color>
+
+
+    <!-- Éjszakai színek -->
+    <!-- ########################################################################## -->
+
+<!--    <color name="cardBackground_Dark">#AE083042</color> -->
+
+    <color name="colorPrimary_Night">#021720</color>
+    <color name="colorPrimaryDark_Night">#021720</color>
+
+    <color name="cardBackground_Dark">#021720</color>
+
+    <color name="colorAccent_Night">#f86734</color>
+
+    <color name="colorAccentTransparentLight_Night">#F2D65725</color>
+
+    <color name="colorAccentStrong_Night">#0F6C59</color>
+    <color name="colorAccentLight_Night">#DD006E58</color>
+
+    <color name="fontColor_Strong_Night">#FFFFFF</color>
+    <color name="fontColor_Dark_card_Night">#FFFFFF</color>
+    <color name="fontColor_Light_card_Night">#C9ECECEC</color>
+
+
+
+    <color name="androidWhite">#d6f0ff</color>
+    <color name="androidPrimary">#3ddb85</color>
+    <color name="androidPrimaryDark">#083042</color>
+    <color name="androidAccent">#4282f2</color>
+    <color name="androidAccent2">#f86734</color>
+    <color name="androidChreme">#f0f7cf</color>
+
+    <!--
+        <color name="colorPrimary">#30bf7a</color>
+        <color name="colorPrimaryDark">#1b8c5f</color>
+        <color name="colorAccent">#17cfb0</color>
+        <color name="colorAccent2">#28afc9</color>
+        -->
+</resources>

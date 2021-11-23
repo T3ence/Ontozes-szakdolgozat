@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "484368142277",
+    "firebase_url": "https://ontozes.firebaseio.com",
+    "project_id": "ontozes",
+    "storage_bucket": "ontozes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484368142277:android:b7be34145fd0f0a8ee45ac",
+        "android_client_info": {
+          "package_name": "com.example.ontozes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484368142277-ha7bd3ja9m1d63s0ep85pslbnqg91efp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG_6ndyRvohSroa13h7rJQYQi5ewb7DJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484368142277-ha7bd3ja9m1d63s0ep85pslbnqg91efp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

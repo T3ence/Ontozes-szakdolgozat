@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_type2"
+    tools:context=".Linear">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:alpha="0.9"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alpha="1"
+                        app:cardBackgroundColor="?attr/colorAccentLight"
+                        app:cardCornerRadius="35dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:paddingLeft="13dp"
+                                android:paddingRight="0dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView10"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:background="@drawable/ontozes_logo_round"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/linear_kapcsolat_const"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Kapcsolat:"
+                                    android:textAlignment="center"
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/linear_kapcsolat"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView10"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/linear_kapcsolat"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="false"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/fontColor_Dark_card"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!-- TODO: Még nincsen
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:paddingLeft="13dp"
+                                android:paddingRight="0dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView2"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:background="?attr/clock_icon"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/linear_ido_telepitesig_const"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Telepítésig:"
+                                    android:textAlignment="center"
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/linear_ido_telepitesig"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/linear_ido_telepitesig"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="0 perc"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/fontColor_Dark_card"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:paddingLeft="13dp"
+                                android:paddingRight="0dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView4"
+                                    android:layout_width="35dp"
+                                    android:layout_height="30dp"
+                                    android:background="?attr/ontozes_logo"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/linear_ontozesi_mennyiseg_const"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Mennyiség:"
+                                    android:textAlignment="center"
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/linear_ontozesi_mennyiseg"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/linear_ontozesi_mennyiseg"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="0 mm"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/fontColor_Dark_card"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+-->
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="20dp"
+                                android:paddingLeft="13dp"
+                                android:paddingRight="0dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView3l"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:background="?water_pressure"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/dob_nyomas_constl"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Víznyomás:"
+                                    android:textAlignment="center"
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/linear_nyomas"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView3l"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/linear_nyomas"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="0.0 bar"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/fontColor_Dark_card"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="20dp"
+                                android:paddingLeft="13dp"
+                                android:paddingRight="0dp">
+
+                                <ImageView
+                                    android:id="@+id/linear_lon_img"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:background="?attr/location"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/linear_lon_const"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Hosszúság:"
+                                    android:textAlignment="center"
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/linear_lon"
+                                    app:layout_constraintStart_toEndOf="@+id/linear_lon_img"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/linear_lon"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/fontColor_Dark_card"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="20dp"
+                                android:paddingLeft="13dp"
+                                android:paddingRight="0dp">
+
+                                <ImageView
+                                    android:id="@+id/linear_lat_img"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:background="?attr/location"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/linear_lat_const"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Szélesség:"
+                                    android:textAlignment="center"
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/linear_lat"
+                                    app:layout_constraintStart_toEndOf="@+id/linear_lat_img"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/linear_lat"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="?attr/fontColor_Dark_card"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <!-- TODO: grafikon
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alpha="1"
+                        app:cardBackgroundColor="?attr/colorAccentLight"
+                        app:cardCornerRadius="35dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.lukelorusso.verticalseekbar.VerticalSeekBar
+                                    android:id="@+id/linearSeek"
+                                    android:layout_width="180dp"
+                                    android:layout_height="260dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+
+
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:vsb_bar_background_gradient_end="@color/androidWhite"
+                                    app:vsb_bar_background_gradient_start="@color/waterBlue"
+                                    app:vsb_bar_corner_radius="25dp"
+                                    app:vsb_bar_progress_gradient_end="?attr/colorAccentLight"
+                                    app:vsb_bar_progress_gradient_start="@color/androidChreme"
+                                    app:vsb_bar_width="170dp"
+                                    app:vsb_click_to_set_progress="false"
+                                    app:vsb_max_placeholder_position="inside"
+                                    app:vsb_min_placeholder_position="inside"
+                                    app:vsb_progress="50"
+                                    app:vsb_show_thumb="true"
+                                    app:vsb_thumb_container_corner_radius="10dp"
+                                    app:vsb_thumb_container_tint="@color/transparent"
+                                    app:vsb_thumb_placeholder_src="@drawable/konzol_telepites_kep"
+                                    app:vsb_use_thumb_to_set_progress="false" />
+
+                                <TextView
+                                    android:id="@+id/linear_hatralevo_meter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 m"
+                                    android:textColor="?attr/fontColor_Light_card"
+                                    android:textSize="30dp"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                            </LinearLayout>
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    -->
+
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alpha="1"
+                        app:cardBackgroundColor="?attr/colorAccentLight"
+                        app:cardCornerRadius="35dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            >
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:layout_marginBottom="5dp"
+                                >
+
+
+                                <Button
+                                    android:id="@+id/linearElore"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="130dp"
+                                    android:layout_height="70dp"
+                                    android:textAlignment="center"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/button_bck_orange"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:textSize="20sp"
+                                    android:textAllCaps="false"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Előre"
+                                    android:onClick="inditas_elore"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <Button
+                                    android:id="@+id/linearHatra"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="130dp"
+                                    android:layout_height="70dp"
+                                    android:textAlignment="center"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/button_bck_orange"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:textSize="20sp"
+                                    android:textAllCaps="false"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:textColor="#FFFFFF"
+                                    android:text="Hátra"
+                                    android:onClick="inditas_hatra"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                            <!--
+                                                    <Button
+                                                        android:id="@+id/linearLeallitas"
+                                                        style="@style/Widget.AppCompat.Button.Colored"
+                                                        android:layout_width="110dp"
+                                                        android:layout_height="70dp"
+                                                        android:textAlignment="center"
+                                                        android:orientation="horizontal"
+                                                        android:background="@drawable/button_bck_orange"
+                                                        android:fontFamily="@font/roboto_bold"
+                                                        android:textSize="20sp"
+                                                        android:textAllCaps="false"
+                                                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                                        android:textColor="#FFFFFF"
+                                                        android:text="Leállítás" />
+                              -->
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alpha="1"
+                        app:cardBackgroundColor="?attr/colorAccentLight"
+                        app:cardCornerRadius="35dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            >
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:layout_marginBottom="5dp"
+                                >
+
+
+                                <Button
+                                    android:id="@+id/linearLeallitas"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="130dp"
+                                    android:layout_height="70dp"
+                                    android:background="@drawable/button_bck_orange"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:onClick="linear_leallitas"
+                                    android:orientation="horizontal"
+                                    android:text="Leállítás"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="20sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                            <!--
+                                                    <Button
+                                                        android:id="@+id/linearLeallitas"
+                                                        style="@style/Widget.AppCompat.Button.Colored"
+                                                        android:layout_width="110dp"
+                                                        android:layout_height="70dp"
+                                                        android:textAlignment="center"
+                                                        android:orientation="horizontal"
+                                                        android:background="@drawable/button_bck_orange"
+                                                        android:fontFamily="@font/roboto_bold"
+                                                        android:textSize="20sp"
+                                                        android:textAllCaps="false"
+                                                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                                        android:textColor="#FFFFFF"
+                                                        android:text="Leállítás" />
+                              -->
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
